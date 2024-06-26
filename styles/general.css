@@ -1,0 +1,16 @@
+html {
+
+    height: 3500px;
+}
+
+
+
+body {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Verdana, Arial;
+    background: linear-gradient(to right,#26531d, #b9af38)
+}
+
