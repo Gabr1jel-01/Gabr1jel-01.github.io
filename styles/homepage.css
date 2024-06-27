@@ -2,7 +2,7 @@
 
 .navbar-div {
     display: grid;
-    background: linear-gradient(to right,#37502b, #69652d);
+    background: linear-gradient(to right,#456bb3, #69d7db);
     top: 0;
     height: 150px;
     width: 100%;
@@ -21,7 +21,7 @@
     grid-column: 3;
     grid-row: 1;
     border-radius: 400px;
-    box-shadow: 10px 10px 100px rgb(68, 0, 156);
+    box-shadow: 10px 10px 100px rgb(255, 255, 255);
 }
 
 
@@ -225,7 +225,7 @@
     grid-column: 1;
     width: 610px;
     height: 4px;
-    margin-left: 660px;
+    margin-left: 105%;
     margin-top: 250px;
     border: none;
 }
