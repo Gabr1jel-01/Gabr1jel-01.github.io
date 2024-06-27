@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html style="width: 100%; padding-left: 0px; margin-left: 0px;">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <title>Gabrijel's portfolio</title>
 
@@ -61,7 +64,7 @@
                 and why I’m ready to contribute and grow in a dynamic role.</div>
         </div>
 
-        <hr class="first-horizontal">
+        
 
         <div class="content-2" id="aboutSection">
             About
@@ -72,11 +75,11 @@
                 Let’s connect, collaborate, and build something awesome together!</div>
         </div>
 
-        <hr class="second-horizontal">
+        
 
-        <hr class="middle-line">
+        
 
-        <hr class="third-horizontal">
+        
         
         <div class="content-3" id="whyMeSection">
             Why me? 
@@ -88,7 +91,7 @@
                 I am driven by a relentless passion for learning and growth in web development.</div>
         </div>
 
-        <hr class="fourth-horizontal">
+        
 
         <div class="content-4" id="contactSection">
             Contact
@@ -103,22 +106,25 @@
     </div>
     
     <script>
-        document.getElementById('homeButton').addEventListener('click', function() {
-            document.getElementById('homeSection').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('aboutButton').addEventListener('click', function() {
-            document.getElementById('aboutSection').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('contactButton').addEventListener('click', function() {
-            document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        document.getElementById('whyMeButton').addEventListener('click', function() {
-            document.getElementById('whyMeSection').scrollIntoView({ behavior: 'smooth' });
-        });
+        function scrollToSection(buttonId, sectionId, offset = 100) {
+            document.getElementById(buttonId).addEventListener('click', function() {
+                const section = document.getElementById(sectionId);
+                const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = sectionPosition - offset;
+    
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    
+        scrollToSection('homeButton', 'homeSection', 600);
+        scrollToSection('aboutButton', 'aboutSection', 580);
+        scrollToSection('contactButton', 'contactSection', 100);
+        scrollToSection('whyMeButton', 'whyMeSection', 580);
     </script>
+    
 
 </body>
 </html>
