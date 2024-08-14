@@ -16,3 +16,12 @@ body {
     background-size: cover;
 }
 
+@media only screen and (max-width: 1000px) {
+    html {
+        height: 2000px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+}
